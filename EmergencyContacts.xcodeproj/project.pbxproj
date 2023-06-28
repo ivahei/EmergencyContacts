@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED75592D2A4CDDFA00C4CBAD /* EmergencyContactsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75592C2A4CDDFA00C4CBAD /* EmergencyContactsApp.swift */; };
+		ED75592F2A4CDDFA00C4CBAD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75592E2A4CDDFA00C4CBAD /* ContentView.swift */; };
+		ED7559312A4CDDFA00C4CBAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED7559302A4CDDFA00C4CBAD /* Assets.xcassets */; };
+		ED7559342A4CDDFA00C4CBAD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED7559332A4CDDFA00C4CBAD /* Preview Assets.xcassets */; };
+		ED75593E2A4CDDFA00C4CBAD /* EmergencyContactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75593D2A4CDDFA00C4CBAD /* EmergencyContactsTests.swift */; };
+		ED7559482A4CDDFA00C4CBAD /* EmergencyContactsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7559472A4CDDFA00C4CBAD /* EmergencyContactsUITests.swift */; };
+		ED75594A2A4CDDFA00C4CBAD /* EmergencyContactsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7559492A4CDDFA00C4CBAD /* EmergencyContactsUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ED75593A2A4CDDFA00C4CBAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED7559212A4CDDFA00C4CBAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED7559282A4CDDFA00C4CBAD;
+			remoteInfo = EmergencyContacts;
+		};
+		ED7559442A4CDDFA00C4CBAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED7559212A4CDDFA00C4CBAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED7559282A4CDDFA00C4CBAD;
+			remoteInfo = EmergencyContacts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ED7559292A4CDDFA00C4CBAD /* EmergencyContacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmergencyContacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED75592C2A4CDDFA00C4CBAD /* EmergencyContactsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyContactsApp.swift; sourceTree = "<group>"; };
+		ED75592E2A4CDDFA00C4CBAD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ED7559302A4CDDFA00C4CBAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED7559332A4CDDFA00C4CBAD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ED7559392A4CDDFA00C4CBAD /* EmergencyContactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmergencyContactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED75593D2A4CDDFA00C4CBAD /* EmergencyContactsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyContactsTests.swift; sourceTree = "<group>"; };
+		ED7559432A4CDDFA00C4CBAD /* EmergencyContactsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmergencyContactsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED7559472A4CDDFA00C4CBAD /* EmergencyContactsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyContactsUITests.swift; sourceTree = "<group>"; };
+		ED7559492A4CDDFA00C4CBAD /* EmergencyContactsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyContactsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED7559262A4CDDFA00C4CBAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED7559362A4CDDFA00C4CBAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED7559402A4CDDFA00C4CBAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ED7559202A4CDDFA00C4CBAD = {
+			isa = PBXGroup;
+			children = (
+				ED75592B2A4CDDFA00C4CBAD /* EmergencyContacts */,
+				ED75593C2A4CDDFA00C4CBAD /* EmergencyContactsTests */,
+				ED7559462A4CDDFA00C4CBAD /* EmergencyContactsUITests */,
+				ED75592A2A4CDDFA00C4CBAD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ED75592A2A4CDDFA00C4CBAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED7559292A4CDDFA00C4CBAD /* EmergencyContacts.app */,
+				ED7559392A4CDDFA00C4CBAD /* EmergencyContactsTests.xctest */,
+				ED7559432A4CDDFA00C4CBAD /* EmergencyContactsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED75592B2A4CDDFA00C4CBAD /* EmergencyContacts */ = {
+			isa = PBXGroup;
+			children = (
+				ED75592C2A4CDDFA00C4CBAD /* EmergencyContactsApp.swift */,
+				ED75592E2A4CDDFA00C4CBAD /* ContentView.swift */,
+				ED7559302A4CDDFA00C4CBAD /* Assets.xcassets */,
+				ED7559322A4CDDFA00C4CBAD /* Preview Content */,
+			);
+			path = EmergencyContacts;
+			sourceTree = "<group>";
+		};
+		ED7559322A4CDDFA00C4CBAD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ED7559332A4CDDFA00C4CBAD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ED75593C2A4CDDFA00C4CBAD /* EmergencyContactsTests */ = {
+			isa = PBXGroup;
+			children = (
+				ED75593D2A4CDDFA00C4CBAD /* EmergencyContactsTests.swift */,
+			);
+			path = EmergencyContactsTests;
+			sourceTree = "<group>";
+		};
+		ED7559462A4CDDFA00C4CBAD /* EmergencyContactsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ED7559472A4CDDFA00C4CBAD /* EmergencyContactsUITests.swift */,
+				ED7559492A4CDDFA00C4CBAD /* EmergencyContactsUITestsLaunchTests.swift */,
+			);
+			path = EmergencyContactsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED7559282A4CDDFA00C4CBAD /* EmergencyContacts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED75594D2A4CDDFA00C4CBAD /* Build configuration list for PBXNativeTarget "EmergencyContacts" */;
+			buildPhases = (
+				ED7559252A4CDDFA00C4CBAD /* Sources */,
+				ED7559262A4CDDFA00C4CBAD /* Frameworks */,
+				ED7559272A4CDDFA00C4CBAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EmergencyContacts;
+			productName = EmergencyContacts;
+			productReference = ED7559292A4CDDFA00C4CBAD /* EmergencyContacts.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ED7559382A4CDDFA00C4CBAD /* EmergencyContactsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED7559502A4CDDFA00C4CBAD /* Build configuration list for PBXNativeTarget "EmergencyContactsTests" */;
+			buildPhases = (
+				ED7559352A4CDDFA00C4CBAD /* Sources */,
+				ED7559362A4CDDFA00C4CBAD /* Frameworks */,
+				ED7559372A4CDDFA00C4CBAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED75593B2A4CDDFA00C4CBAD /* PBXTargetDependency */,
+			);
+			name = EmergencyContactsTests;
+			productName = EmergencyContactsTests;
+			productReference = ED7559392A4CDDFA00C4CBAD /* EmergencyContactsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ED7559422A4CDDFA00C4CBAD /* EmergencyContactsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED7559532A4CDDFA00C4CBAD /* Build configuration list for PBXNativeTarget "EmergencyContactsUITests" */;
+			buildPhases = (
+				ED75593F2A4CDDFA00C4CBAD /* Sources */,
+				ED7559402A4CDDFA00C4CBAD /* Frameworks */,
+				ED7559412A4CDDFA00C4CBAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED7559452A4CDDFA00C4CBAD /* PBXTargetDependency */,
+			);
+			name = EmergencyContactsUITests;
+			productName = EmergencyContactsUITests;
+			productReference = ED7559432A4CDDFA00C4CBAD /* EmergencyContactsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED7559212A4CDDFA00C4CBAD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					ED7559282A4CDDFA00C4CBAD = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					ED7559382A4CDDFA00C4CBAD = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = ED7559282A4CDDFA00C4CBAD;
+					};
+					ED7559422A4CDDFA00C4CBAD = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = ED7559282A4CDDFA00C4CBAD;
+					};
+				};
+			};
+			buildConfigurationList = ED7559242A4CDDFA00C4CBAD /* Build configuration list for PBXProject "EmergencyContacts" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED7559202A4CDDFA00C4CBAD;
+			productRefGroup = ED75592A2A4CDDFA00C4CBAD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED7559282A4CDDFA00C4CBAD /* EmergencyContacts */,
+				ED7559382A4CDDFA00C4CBAD /* EmergencyContactsTests */,
+				ED7559422A4CDDFA00C4CBAD /* EmergencyContactsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED7559272A4CDDFA00C4CBAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED7559342A4CDDFA00C4CBAD /* Preview Assets.xcassets in Resources */,
+				ED7559312A4CDDFA00C4CBAD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED7559372A4CDDFA00C4CBAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED7559412A4CDDFA00C4CBAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED7559252A4CDDFA00C4CBAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED75592F2A4CDDFA00C4CBAD /* ContentView.swift in Sources */,
+				ED75592D2A4CDDFA00C4CBAD /* EmergencyContactsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED7559352A4CDDFA00C4CBAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED75593E2A4CDDFA00C4CBAD /* EmergencyContactsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED75593F2A4CDDFA00C4CBAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED7559482A4CDDFA00C4CBAD /* EmergencyContactsUITests.swift in Sources */,
+				ED75594A2A4CDDFA00C4CBAD /* EmergencyContactsUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ED75593B2A4CDDFA00C4CBAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED7559282A4CDDFA00C4CBAD /* EmergencyContacts */;
+			targetProxy = ED75593A2A4CDDFA00C4CBAD /* PBXContainerItemProxy */;
+		};
+		ED7559452A4CDDFA00C4CBAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED7559282A4CDDFA00C4CBAD /* EmergencyContacts */;
+			targetProxy = ED7559442A4CDDFA00C4CBAD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		ED75594B2A4CDDFA00C4CBAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ED75594C2A4CDDFA00C4CBAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED75594E2A4CDDFA00C4CBAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EmergencyContacts/Preview Content\"";
+				DEVELOPMENT_TEAM = 7UL899V6N2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chaotic-dreams.EmergencyContacts";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED75594F2A4CDDFA00C4CBAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EmergencyContacts/Preview Content\"";
+				DEVELOPMENT_TEAM = 7UL899V6N2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chaotic-dreams.EmergencyContacts";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ED7559512A4CDDFA00C4CBAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7UL899V6N2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chaotic-dreams.EmergencyContactsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EmergencyContacts.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EmergencyContacts";
+			};
+			name = Debug;
+		};
+		ED7559522A4CDDFA00C4CBAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7UL899V6N2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chaotic-dreams.EmergencyContactsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EmergencyContacts.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EmergencyContacts";
+			};
+			name = Release;
+		};
+		ED7559542A4CDDFA00C4CBAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7UL899V6N2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chaotic-dreams.EmergencyContactsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EmergencyContacts;
+			};
+			name = Debug;
+		};
+		ED7559552A4CDDFA00C4CBAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7UL899V6N2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chaotic-dreams.EmergencyContactsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EmergencyContacts;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED7559242A4CDDFA00C4CBAD /* Build configuration list for PBXProject "EmergencyContacts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED75594B2A4CDDFA00C4CBAD /* Debug */,
+				ED75594C2A4CDDFA00C4CBAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED75594D2A4CDDFA00C4CBAD /* Build configuration list for PBXNativeTarget "EmergencyContacts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED75594E2A4CDDFA00C4CBAD /* Debug */,
+				ED75594F2A4CDDFA00C4CBAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED7559502A4CDDFA00C4CBAD /* Build configuration list for PBXNativeTarget "EmergencyContactsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED7559512A4CDDFA00C4CBAD /* Debug */,
+				ED7559522A4CDDFA00C4CBAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED7559532A4CDDFA00C4CBAD /* Build configuration list for PBXNativeTarget "EmergencyContactsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED7559542A4CDDFA00C4CBAD /* Debug */,
+				ED7559552A4CDDFA00C4CBAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED7559212A4CDDFA00C4CBAD /* Project object */;
+}
