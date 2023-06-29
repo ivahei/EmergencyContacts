@@ -14,6 +14,18 @@
 		ED75593E2A4CDDFA00C4CBAD /* EmergencyContactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75593D2A4CDDFA00C4CBAD /* EmergencyContactsTests.swift */; };
 		ED7559482A4CDDFA00C4CBAD /* EmergencyContactsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7559472A4CDDFA00C4CBAD /* EmergencyContactsUITests.swift */; };
 		ED75594A2A4CDDFA00C4CBAD /* EmergencyContactsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7559492A4CDDFA00C4CBAD /* EmergencyContactsUITestsLaunchTests.swift */; };
+		ED7559582A4CE01A00C4CBAD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7559572A4CE01A00C4CBAD /* HomeView.swift */; };
+		ED75595C2A4CE08000C4CBAD /* VehicleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75595B2A4CE08000C4CBAD /* VehicleView.swift */; };
+		ED75595E2A4CE0AA00C4CBAD /* VehicleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75595D2A4CE0AA00C4CBAD /* VehicleViewModel.swift */; };
+		ED7559602A4CE11000C4CBAD /* EmergencyContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75595F2A4CE11000C4CBAD /* EmergencyContact.swift */; };
+		ED7559632A4CE15D00C4CBAD /* EmergencyContactDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7559622A4CE15D00C4CBAD /* EmergencyContactDetailViewModel.swift */; };
+		ED7559652A4CE17C00C4CBAD /* EmergencyContactDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7559642A4CE17C00C4CBAD /* EmergencyContactDetailView.swift */; };
+		ED7559682A4CE1CE00C4CBAD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7559672A4CE1CE00C4CBAD /* SettingsView.swift */; };
+		ED75596B2A4CE20700C4CBAD /* SupportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75596A2A4CE20700C4CBAD /* SupportView.swift */; };
+		ED75596E2A4CE22F00C4CBAD /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75596D2A4CE22F00C4CBAD /* MapView.swift */; };
+		ED7559722A4CE27A00C4CBAD /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7559712A4CE27A00C4CBAD /* Array+Extension.swift */; };
+		ED7559742A4CE2F800C4CBAD /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7559732A4CE2F800C4CBAD /* String+Extension.swift */; };
+		ED7559772A4CE43A00C4CBAD /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = ED7559762A4CE43A00C4CBAD /* NVActivityIndicatorView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +56,17 @@
 		ED7559432A4CDDFA00C4CBAD /* EmergencyContactsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmergencyContactsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED7559472A4CDDFA00C4CBAD /* EmergencyContactsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyContactsUITests.swift; sourceTree = "<group>"; };
 		ED7559492A4CDDFA00C4CBAD /* EmergencyContactsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyContactsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ED7559572A4CE01A00C4CBAD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		ED75595B2A4CE08000C4CBAD /* VehicleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleView.swift; sourceTree = "<group>"; };
+		ED75595D2A4CE0AA00C4CBAD /* VehicleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleViewModel.swift; sourceTree = "<group>"; };
+		ED75595F2A4CE11000C4CBAD /* EmergencyContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyContact.swift; sourceTree = "<group>"; };
+		ED7559622A4CE15D00C4CBAD /* EmergencyContactDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyContactDetailViewModel.swift; sourceTree = "<group>"; };
+		ED7559642A4CE17C00C4CBAD /* EmergencyContactDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyContactDetailView.swift; sourceTree = "<group>"; };
+		ED7559672A4CE1CE00C4CBAD /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		ED75596A2A4CE20700C4CBAD /* SupportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportView.swift; sourceTree = "<group>"; };
+		ED75596D2A4CE22F00C4CBAD /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		ED7559712A4CE27A00C4CBAD /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		ED7559732A4CE2F800C4CBAD /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED7559772A4CE43A00C4CBAD /* NVActivityIndicatorView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +118,8 @@
 		ED75592B2A4CDDFA00C4CBAD /* EmergencyContacts */ = {
 			isa = PBXGroup;
 			children = (
+				ED7559562A4CDFCD00C4CBAD /* Scenes */,
+				ED7559702A4CE25900C4CBAD /* Extensions */,
 				ED75592C2A4CDDFA00C4CBAD /* EmergencyContactsApp.swift */,
 				ED75592E2A4CDDFA00C4CBAD /* ContentView.swift */,
 				ED7559302A4CDDFA00C4CBAD /* Assets.xcassets */,
@@ -127,6 +153,87 @@
 			path = EmergencyContactsUITests;
 			sourceTree = "<group>";
 		};
+		ED7559562A4CDFCD00C4CBAD /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				ED7559592A4CE04000C4CBAD /* Home */,
+				ED75595A2A4CE06300C4CBAD /* Vehicle */,
+				ED7559692A4CE1E200C4CBAD /* Settings */,
+				ED75596C2A4CE21500C4CBAD /* Support */,
+				ED75596F2A4CE23A00C4CBAD /* Map */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		ED7559592A4CE04000C4CBAD /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				ED7559572A4CE01A00C4CBAD /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		ED75595A2A4CE06300C4CBAD /* Vehicle */ = {
+			isa = PBXGroup;
+			children = (
+				ED7559662A4CE1A000C4CBAD /* EmergencyContactDetail */,
+				ED7559612A4CE13900C4CBAD /* EmegrancyContact */,
+				ED75595B2A4CE08000C4CBAD /* VehicleView.swift */,
+				ED75595D2A4CE0AA00C4CBAD /* VehicleViewModel.swift */,
+			);
+			path = Vehicle;
+			sourceTree = "<group>";
+		};
+		ED7559612A4CE13900C4CBAD /* EmegrancyContact */ = {
+			isa = PBXGroup;
+			children = (
+				ED75595F2A4CE11000C4CBAD /* EmergencyContact.swift */,
+			);
+			path = EmegrancyContact;
+			sourceTree = "<group>";
+		};
+		ED7559662A4CE1A000C4CBAD /* EmergencyContactDetail */ = {
+			isa = PBXGroup;
+			children = (
+				ED7559622A4CE15D00C4CBAD /* EmergencyContactDetailViewModel.swift */,
+				ED7559642A4CE17C00C4CBAD /* EmergencyContactDetailView.swift */,
+			);
+			path = EmergencyContactDetail;
+			sourceTree = "<group>";
+		};
+		ED7559692A4CE1E200C4CBAD /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				ED7559672A4CE1CE00C4CBAD /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		ED75596C2A4CE21500C4CBAD /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				ED75596A2A4CE20700C4CBAD /* SupportView.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		ED75596F2A4CE23A00C4CBAD /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				ED75596D2A4CE22F00C4CBAD /* MapView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		ED7559702A4CE25900C4CBAD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ED7559712A4CE27A00C4CBAD /* Array+Extension.swift */,
+				ED7559732A4CE2F800C4CBAD /* String+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +250,9 @@
 			dependencies = (
 			);
 			name = EmergencyContacts;
+			packageProductDependencies = (
+				ED7559762A4CE43A00C4CBAD /* NVActivityIndicatorView */,
+			);
 			productName = EmergencyContacts;
 			productReference = ED7559292A4CDDFA00C4CBAD /* EmergencyContacts.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +325,9 @@
 				Base,
 			);
 			mainGroup = ED7559202A4CDDFA00C4CBAD;
+			packageReferences = (
+				ED7559752A4CE43A00C4CBAD /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
+			);
 			productRefGroup = ED75592A2A4CDDFA00C4CBAD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +370,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED75596B2A4CE20700C4CBAD /* SupportView.swift in Sources */,
+				ED7559652A4CE17C00C4CBAD /* EmergencyContactDetailView.swift in Sources */,
+				ED75595E2A4CE0AA00C4CBAD /* VehicleViewModel.swift in Sources */,
+				ED7559722A4CE27A00C4CBAD /* Array+Extension.swift in Sources */,
+				ED75596E2A4CE22F00C4CBAD /* MapView.swift in Sources */,
+				ED7559632A4CE15D00C4CBAD /* EmergencyContactDetailViewModel.swift in Sources */,
+				ED7559742A4CE2F800C4CBAD /* String+Extension.swift in Sources */,
+				ED7559682A4CE1CE00C4CBAD /* SettingsView.swift in Sources */,
+				ED7559582A4CE01A00C4CBAD /* HomeView.swift in Sources */,
+				ED7559602A4CE11000C4CBAD /* EmergencyContact.swift in Sources */,
 				ED75592F2A4CDDFA00C4CBAD /* ContentView.swift in Sources */,
 				ED75592D2A4CDDFA00C4CBAD /* EmergencyContactsApp.swift in Sources */,
+				ED75595C2A4CE08000C4CBAD /* VehicleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,8 +547,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -432,9 +555,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chaotic-dreams.EmergencyContacts";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -452,8 +578,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -461,9 +586,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chaotic-dreams.EmergencyContacts";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -583,6 +711,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ED7559752A4CE43A00C4CBAD /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ninjaprox/NVActivityIndicatorView.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ED7559762A4CE43A00C4CBAD /* NVActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED7559752A4CE43A00C4CBAD /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ED7559212A4CDDFA00C4CBAD /* Project object */;
 }
