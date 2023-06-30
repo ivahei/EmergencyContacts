@@ -70,7 +70,7 @@ class EmergencyContactService: ObservableObject, EmergencySavable {
 }
 
 // Mock Data for testing
-class FakeEmergencyContactService: EmergencySavable {
+final class FakeEmergencyContactService: EmergencySavable {
     var contactList: [EmergencyContact] = []
     func update(contact: EmergencyContact) {}
     func save(contacts: [EmergencyContact]) {}
