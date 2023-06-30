@@ -9,28 +9,37 @@ import XCTest
 @testable import EmergencyContacts
 
 final class EmergencyContactsTests: XCTestCase {
+    var emergencyContactService: EmergencyContactService!
+    var mockService: FakeEmergencyContactService!
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    override func setUp() {
+        super.setUp()
+        mockService = FakeEmergencyContactService()
+        emergencyContactService = EmergencyContactService()
+        emergencyContactService.contactList = mockService.contactList
+    }
+    
+    override func tearDown() {
+        emergencyContactService = nil
+        mockService = nil
+        super.tearDown()
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func testUpdateContact() {
+        let updatedContact = mockService.contactList[0]
+        emergencyContactService.update(contact: updatedContact)
+        XCTAssertEqual(emergencyContactService.contactList[0].id, mockService.contactList[0].id)
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func testSaveContact() {
+        let newContact = mockService.contactList[0]
+        emergencyContactService.save(contacts: [newContact])
+        XCTAssertEqual(emergencyContactService.contactList[0].id, mockService.contactList[0].id)
     }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testRemoveContact() {
+        let contactToRemove = mockService.contactList[0]
+        emergencyContactService.remove(contact: contactToRemove)
+        XCTAssertFalse(emergencyContactService.contactList.contains(where: { $0.id == contactToRemove.id }))
     }
-
 }
