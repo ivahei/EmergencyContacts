@@ -25,6 +25,7 @@ struct SnackBar: View {
         .cornerRadius(12)
         .opacity(snackBarData.isVisible ? 1 : 0)
         .offset(x: 0, y: snackBarData.isVisible ? 0 : 50)
+        .padding(.bottom, 10)
         .animation(.easeInOut, value: snackBarData.isVisible)
     }
 }

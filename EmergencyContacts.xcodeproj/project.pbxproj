@@ -10,6 +10,15 @@
 		ED69EAB62A4DB1880032AF5C /* SnackBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED69EAB52A4DB1880032AF5C /* SnackBarModifier.swift */; };
 		ED69EAB82A4DB1C60032AF5C /* SnackBarData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED69EAB72A4DB1C60032AF5C /* SnackBarData.swift */; };
 		ED69EABA2A4DB3440032AF5C /* SnackBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED69EAB92A4DB3440032AF5C /* SnackBar.swift */; };
+		ED69EABC2A4F022D0032AF5C /* EmergencyContactHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED69EABB2A4F022D0032AF5C /* EmergencyContactHeader.swift */; };
+		ED69EABE2A4F025E0032AF5C /* EmergencyContactRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED69EABD2A4F025E0032AF5C /* EmergencyContactRow.swift */; };
+		ED69EAC02A4F02E00032AF5C /* EmergencyContactService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED69EABF2A4F02E00032AF5C /* EmergencyContactService.swift */; };
+		ED69EAC22A4F03260032AF5C /* FakeEmergencyContactService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED69EAC12A4F03260032AF5C /* FakeEmergencyContactService.swift */; };
+		ED69EAC52A4F03CF0032AF5C /* LabeledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED69EAC42A4F03CF0032AF5C /* LabeledTextField.swift */; };
+		ED69EAC82A4F03F90032AF5C /* ActionButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED69EAC72A4F03F90032AF5C /* ActionButtonsView.swift */; };
+		ED69EACB2A4F042B0032AF5C /* RelationshipPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED69EACA2A4F042B0032AF5C /* RelationshipPickerView.swift */; };
+		ED69EACE2A4F04AB0032AF5C /* ContactPhoneFieldsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED69EACD2A4F04AB0032AF5C /* ContactPhoneFieldsView.swift */; };
+		ED69EAD02A4F04C30032AF5C /* ContactNameFieldsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED69EACF2A4F04C30032AF5C /* ContactNameFieldsView.swift */; };
 		ED75592D2A4CDDFA00C4CBAD /* EmergencyContactsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75592C2A4CDDFA00C4CBAD /* EmergencyContactsApp.swift */; };
 		ED75592F2A4CDDFA00C4CBAD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75592E2A4CDDFA00C4CBAD /* ContentView.swift */; };
 		ED7559312A4CDDFA00C4CBAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED7559302A4CDDFA00C4CBAD /* Assets.xcassets */; };
@@ -51,6 +60,15 @@
 		ED69EAB52A4DB1880032AF5C /* SnackBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackBarModifier.swift; sourceTree = "<group>"; };
 		ED69EAB72A4DB1C60032AF5C /* SnackBarData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackBarData.swift; sourceTree = "<group>"; };
 		ED69EAB92A4DB3440032AF5C /* SnackBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackBar.swift; sourceTree = "<group>"; };
+		ED69EABB2A4F022D0032AF5C /* EmergencyContactHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyContactHeader.swift; sourceTree = "<group>"; };
+		ED69EABD2A4F025E0032AF5C /* EmergencyContactRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyContactRow.swift; sourceTree = "<group>"; };
+		ED69EABF2A4F02E00032AF5C /* EmergencyContactService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyContactService.swift; sourceTree = "<group>"; };
+		ED69EAC12A4F03260032AF5C /* FakeEmergencyContactService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeEmergencyContactService.swift; sourceTree = "<group>"; };
+		ED69EAC42A4F03CF0032AF5C /* LabeledTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabeledTextField.swift; sourceTree = "<group>"; };
+		ED69EAC72A4F03F90032AF5C /* ActionButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonsView.swift; sourceTree = "<group>"; };
+		ED69EACA2A4F042B0032AF5C /* RelationshipPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelationshipPickerView.swift; sourceTree = "<group>"; };
+		ED69EACD2A4F04AB0032AF5C /* ContactPhoneFieldsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPhoneFieldsView.swift; sourceTree = "<group>"; };
+		ED69EACF2A4F04C30032AF5C /* ContactNameFieldsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactNameFieldsView.swift; sourceTree = "<group>"; };
 		ED7559292A4CDDFA00C4CBAD /* EmergencyContacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmergencyContacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED75592C2A4CDDFA00C4CBAD /* EmergencyContactsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyContactsApp.swift; sourceTree = "<group>"; };
 		ED75592E2A4CDDFA00C4CBAD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,7 +120,10 @@
 		ED69EAAC2A4D878C0032AF5C /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				ED69EAC62A4F03E30032AF5C /* LabeledTextField */,
 				ED69EAB12A4DAA2A0032AF5C /* SnackBar */,
+				ED69EAC92A4F04000032AF5C /* ActionButtonsView */,
+				ED69EACC2A4F04330032AF5C /* RelationshipPickerView */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -115,6 +136,41 @@
 				ED69EAB92A4DB3440032AF5C /* SnackBar.swift */,
 			);
 			path = SnackBar;
+			sourceTree = "<group>";
+		};
+		ED69EAC32A4F03410032AF5C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				ED69EABF2A4F02E00032AF5C /* EmergencyContactService.swift */,
+				ED69EAC12A4F03260032AF5C /* FakeEmergencyContactService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		ED69EAC62A4F03E30032AF5C /* LabeledTextField */ = {
+			isa = PBXGroup;
+			children = (
+				ED69EAC42A4F03CF0032AF5C /* LabeledTextField.swift */,
+				ED69EACD2A4F04AB0032AF5C /* ContactPhoneFieldsView.swift */,
+				ED69EACF2A4F04C30032AF5C /* ContactNameFieldsView.swift */,
+			);
+			path = LabeledTextField;
+			sourceTree = "<group>";
+		};
+		ED69EAC92A4F04000032AF5C /* ActionButtonsView */ = {
+			isa = PBXGroup;
+			children = (
+				ED69EAC72A4F03F90032AF5C /* ActionButtonsView.swift */,
+			);
+			path = ActionButtonsView;
+			sourceTree = "<group>";
+		};
+		ED69EACC2A4F04330032AF5C /* RelationshipPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				ED69EACA2A4F042B0032AF5C /* RelationshipPickerView.swift */,
+			);
+			path = RelationshipPickerView;
 			sourceTree = "<group>";
 		};
 		ED7559202A4CDDFA00C4CBAD = {
@@ -210,7 +266,10 @@
 		ED7559612A4CE13900C4CBAD /* EmegrancyContact */ = {
 			isa = PBXGroup;
 			children = (
+				ED69EAC32A4F03410032AF5C /* Service */,
 				ED75595F2A4CE11000C4CBAD /* EmergencyContact.swift */,
+				ED69EABB2A4F022D0032AF5C /* EmergencyContactHeader.swift */,
+				ED69EABD2A4F025E0032AF5C /* EmergencyContactRow.swift */,
 			);
 			path = EmegrancyContact;
 			sourceTree = "<group>";
@@ -396,17 +455,26 @@
 				ED75595E2A4CE0AA00C4CBAD /* VehicleViewModel.swift in Sources */,
 				ED7559722A4CE27A00C4CBAD /* Array+Extension.swift in Sources */,
 				ED75596E2A4CE22F00C4CBAD /* MapView.swift in Sources */,
+				ED69EAC02A4F02E00032AF5C /* EmergencyContactService.swift in Sources */,
 				ED7559632A4CE15D00C4CBAD /* EmergencyContactDetailViewModel.swift in Sources */,
+				ED69EACE2A4F04AB0032AF5C /* ContactPhoneFieldsView.swift in Sources */,
 				ED7559742A4CE2F800C4CBAD /* String+Extension.swift in Sources */,
 				ED7559682A4CE1CE00C4CBAD /* SettingsView.swift in Sources */,
+				ED69EAC22A4F03260032AF5C /* FakeEmergencyContactService.swift in Sources */,
 				ED69EAB62A4DB1880032AF5C /* SnackBarModifier.swift in Sources */,
 				ED7559582A4CE01A00C4CBAD /* HomeView.swift in Sources */,
+				ED69EAC82A4F03F90032AF5C /* ActionButtonsView.swift in Sources */,
 				ED7559602A4CE11000C4CBAD /* EmergencyContact.swift in Sources */,
 				ED75592F2A4CDDFA00C4CBAD /* ContentView.swift in Sources */,
+				ED69EAD02A4F04C30032AF5C /* ContactNameFieldsView.swift in Sources */,
+				ED69EACB2A4F042B0032AF5C /* RelationshipPickerView.swift in Sources */,
 				ED69EAB82A4DB1C60032AF5C /* SnackBarData.swift in Sources */,
+				ED69EABE2A4F025E0032AF5C /* EmergencyContactRow.swift in Sources */,
 				ED75592D2A4CDDFA00C4CBAD /* EmergencyContactsApp.swift in Sources */,
+				ED69EAC52A4F03CF0032AF5C /* LabeledTextField.swift in Sources */,
 				ED69EABA2A4DB3440032AF5C /* SnackBar.swift in Sources */,
 				ED75595C2A4CE08000C4CBAD /* VehicleView.swift in Sources */,
+				ED69EABC2A4F022D0032AF5C /* EmergencyContactHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

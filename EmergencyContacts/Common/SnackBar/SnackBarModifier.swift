@@ -18,14 +18,14 @@ struct SnackBarModifier: ViewModifier {
                 Spacer()
                 if let snackBarData = snackBarData {
                     SnackBar(snackBarData: .constant(snackBarData))
-                        .opacity(snackBarData.isVisible ? 0.8 : 0)
+                        .opacity(snackBarData.isVisible ? 0.9 : 0)
                         .animation(.easeInOut, value: snackBarData.isVisible)
                         .onAppear {
                             DispatchQueue.main.asyncAfter(deadline: .now() + snackBarData.dismissAfter) {
                                 withAnimation {
                                     self.snackBarData?.isVisible = false
                                 }
-                                self.snackBarData?.reset() // Reset Snackbar data
+                                self.snackBarData?.reset()
                             }
                         }
                 }
