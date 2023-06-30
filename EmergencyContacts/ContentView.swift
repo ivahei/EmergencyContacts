@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var emergencyContactService = EmergencyContactService()
+
     var body: some View {
         TabView {
             HomeView()
@@ -16,7 +18,7 @@ struct ContentView: View {
                     Text("Home")
                 }
 
-            VehicleView(viewModel: VehicleViewModel(emergencyContactService: EmergencyContactService()))
+            VehicleView(viewModel: VehicleViewModel(emergencyContactService: emergencyContactService))
                 .tabItem {
                     Image(systemName: "car")
                     Text("Vehicle")
@@ -40,6 +42,7 @@ struct ContentView: View {
                     Text("Settings")
                 }
         }
+        .environmentObject(emergencyContactService)
     }
 }
 

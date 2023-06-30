@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED69EAB62A4DB1880032AF5C /* SnackBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED69EAB52A4DB1880032AF5C /* SnackBarModifier.swift */; };
+		ED69EAB82A4DB1C60032AF5C /* SnackBarData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED69EAB72A4DB1C60032AF5C /* SnackBarData.swift */; };
+		ED69EABA2A4DB3440032AF5C /* SnackBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED69EAB92A4DB3440032AF5C /* SnackBar.swift */; };
 		ED75592D2A4CDDFA00C4CBAD /* EmergencyContactsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75592C2A4CDDFA00C4CBAD /* EmergencyContactsApp.swift */; };
 		ED75592F2A4CDDFA00C4CBAD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75592E2A4CDDFA00C4CBAD /* ContentView.swift */; };
 		ED7559312A4CDDFA00C4CBAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED7559302A4CDDFA00C4CBAD /* Assets.xcassets */; };
@@ -25,7 +28,6 @@
 		ED75596E2A4CE22F00C4CBAD /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75596D2A4CE22F00C4CBAD /* MapView.swift */; };
 		ED7559722A4CE27A00C4CBAD /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7559712A4CE27A00C4CBAD /* Array+Extension.swift */; };
 		ED7559742A4CE2F800C4CBAD /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7559732A4CE2F800C4CBAD /* String+Extension.swift */; };
-		ED7559772A4CE43A00C4CBAD /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = ED7559762A4CE43A00C4CBAD /* NVActivityIndicatorView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED69EAB52A4DB1880032AF5C /* SnackBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackBarModifier.swift; sourceTree = "<group>"; };
+		ED69EAB72A4DB1C60032AF5C /* SnackBarData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackBarData.swift; sourceTree = "<group>"; };
+		ED69EAB92A4DB3440032AF5C /* SnackBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackBar.swift; sourceTree = "<group>"; };
 		ED7559292A4CDDFA00C4CBAD /* EmergencyContacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmergencyContacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED75592C2A4CDDFA00C4CBAD /* EmergencyContactsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyContactsApp.swift; sourceTree = "<group>"; };
 		ED75592E2A4CDDFA00C4CBAD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,7 +79,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED7559772A4CE43A00C4CBAD /* NVActivityIndicatorView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +99,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED69EAAC2A4D878C0032AF5C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				ED69EAB12A4DAA2A0032AF5C /* SnackBar */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		ED69EAB12A4DAA2A0032AF5C /* SnackBar */ = {
+			isa = PBXGroup;
+			children = (
+				ED69EAB52A4DB1880032AF5C /* SnackBarModifier.swift */,
+				ED69EAB72A4DB1C60032AF5C /* SnackBarData.swift */,
+				ED69EAB92A4DB3440032AF5C /* SnackBar.swift */,
+			);
+			path = SnackBar;
+			sourceTree = "<group>";
+		};
 		ED7559202A4CDDFA00C4CBAD = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				ED7559562A4CDFCD00C4CBAD /* Scenes */,
+				ED69EAAC2A4D878C0032AF5C /* Common */,
 				ED7559702A4CE25900C4CBAD /* Extensions */,
 				ED75592C2A4CDDFA00C4CBAD /* EmergencyContactsApp.swift */,
 				ED75592E2A4CDDFA00C4CBAD /* ContentView.swift */,
@@ -251,7 +274,6 @@
 			);
 			name = EmergencyContacts;
 			packageProductDependencies = (
-				ED7559762A4CE43A00C4CBAD /* NVActivityIndicatorView */,
 			);
 			productName = EmergencyContacts;
 			productReference = ED7559292A4CDDFA00C4CBAD /* EmergencyContacts.app */;
@@ -326,7 +348,6 @@
 			);
 			mainGroup = ED7559202A4CDDFA00C4CBAD;
 			packageReferences = (
-				ED7559752A4CE43A00C4CBAD /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
 			);
 			productRefGroup = ED75592A2A4CDDFA00C4CBAD /* Products */;
 			projectDirPath = "";
@@ -378,10 +399,13 @@
 				ED7559632A4CE15D00C4CBAD /* EmergencyContactDetailViewModel.swift in Sources */,
 				ED7559742A4CE2F800C4CBAD /* String+Extension.swift in Sources */,
 				ED7559682A4CE1CE00C4CBAD /* SettingsView.swift in Sources */,
+				ED69EAB62A4DB1880032AF5C /* SnackBarModifier.swift in Sources */,
 				ED7559582A4CE01A00C4CBAD /* HomeView.swift in Sources */,
 				ED7559602A4CE11000C4CBAD /* EmergencyContact.swift in Sources */,
 				ED75592F2A4CDDFA00C4CBAD /* ContentView.swift in Sources */,
+				ED69EAB82A4DB1C60032AF5C /* SnackBarData.swift in Sources */,
 				ED75592D2A4CDDFA00C4CBAD /* EmergencyContactsApp.swift in Sources */,
+				ED69EABA2A4DB3440032AF5C /* SnackBar.swift in Sources */,
 				ED75595C2A4CE08000C4CBAD /* VehicleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -711,25 +735,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		ED7559752A4CE43A00C4CBAD /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ninjaprox/NVActivityIndicatorView.git";
-			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 5.1.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		ED7559762A4CE43A00C4CBAD /* NVActivityIndicatorView */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = ED7559752A4CE43A00C4CBAD /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
-			productName = NVActivityIndicatorView;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ED7559212A4CDDFA00C4CBAD /* Project object */;
 }

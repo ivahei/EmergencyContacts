@@ -10,7 +10,8 @@ import SwiftUI
 struct VehicleView: View {
     @StateObject var viewModel: VehicleViewModel
     @State var localContactList: [EmergencyContact]
-    
+    @EnvironmentObject var emergencyContactService: EmergencyContactService
+
     init(viewModel: VehicleViewModel) {
         _viewModel = StateObject(wrappedValue: viewModel)
         self.localContactList = viewModel.emergencyContactList
@@ -65,6 +66,7 @@ struct VehicleView: View {
                 }
                 .padding(.bottom, 30)
             }
+            .showSnackBar($viewModel.snackBarData)
             .onAppear {
                 viewModel.refreshData()
             }

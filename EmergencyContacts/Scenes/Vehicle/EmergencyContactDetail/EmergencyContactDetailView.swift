@@ -10,108 +10,171 @@ import SwiftUI
 struct EmergencyContactDetailView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @StateObject var viewModel: EmergencyContactDetailViewModel
-    
+    @State var showingDeleteAlert = false
+
     var inactiveButtonColor = Color(red: 64/255, green: 160/255, blue: 218/255).opacity(0.25)
     var activeButtonColor = Color(red: 64/255, green: 160/255, blue: 218/255)
     
     var body: some View {
         VStack {
-            HStack {
-                Text("First Name")
-                Spacer()
+            ContactNameFieldsView(viewModel: viewModel)
+            ContactPhoneFieldsView(viewModel: viewModel)
+            RelationshipPickerView(viewModel: viewModel)
+            Spacer()
+            ActionButtonsView(viewModel: viewModel, presentationMode: presentationMode)
+        }
+        .background(Color.clear)
+        .padding(30)
+    }
+}
+
+struct ContactNameFieldsView: View {
+    @ObservedObject var viewModel: EmergencyContactDetailViewModel
+    
+    var body: some View {
+        Group {
+            LabeledTextField(label: "First Name", placeholder: "First Name", text: $viewModel.firstName)
+            LabeledTextField(label: "Last Name", placeholder: "Last Name", text: $viewModel.lastName)
+        }
+    }
+}
+
+struct ContactPhoneFieldsView: View {
+    @ObservedObject var viewModel: EmergencyContactDetailViewModel
+    
+    var body: some View {
+        Group {
+            LabeledTextField(label: "Primary Phone", placeholder: "(000) 000-0000", text: $viewModel.primaryPhone, keyboardType: .numberPad)
+            LabeledTextField(label: "Secondary Phone (optional)", placeholder: "(000) 000-0000", text: $viewModel.secondaryPhone, keyboardType: .numberPad)
+        }
+    }
+}
+
+struct RelationshipPickerView: View {
+    @ObservedObject var viewModel: EmergencyContactDetailViewModel
+
+    var body: some View {
+        VStack(alignment: .leading) {
+            Text("Relationship")
+                .multilineTextAlignment(.leading)
+
+            Picker(selection: $viewModel.relationship, label: Text("Relationship")) {
+                ForEach(viewModel.relationships, id: \.self) {
+                    Text($0)
+                }
             }
-            TextField("First Name", text: $viewModel.firstName)
-                .padding(10)
-                .background(Color(.white))
-                .cornerRadius(5)
-                .shadow(radius: 5)
-                .keyboardType(.namePhonePad)
-            
-            HStack {
-                Text("Last Name")
-                Spacer()
-            }
-            TextField("Last Name", text: $viewModel.lastName)
-                .padding(10)
-                .background(Color(.white))
-                .cornerRadius(5)
-                .shadow(radius: 5)
-                .keyboardType(.namePhonePad)
-            
-            HStack {
-                Text("Primary Phone")
-                Spacer()
-            }
-            TextField(
-                "(000) 000-0000", text: $viewModel.primaryPhone)
-            .padding(10)
-            .background(Color(.white))
+            .padding(3)
+            .frame(maxWidth: .infinity)
+            .background(.white)
             .cornerRadius(5)
             .shadow(radius: 5)
-            .keyboardType(.numberPad)
-            
-            HStack {
-                Text("Secondary Phone (optional)")
-                Spacer()
+            .accentColor(.black)
+        }
+    }
+}
+
+struct ActionButtonsView: View {
+    @ObservedObject var viewModel: EmergencyContactDetailViewModel
+    
+    @Binding var presentationMode: PresentationMode
+    @State var showingDeleteAlert = false
+
+    var inactiveButtonColor = Color(red: 64/255, green: 160/255, blue: 218/255).opacity(0.25)
+    var activeButtonColor = Color(red: 64/255, green: 160/255, blue: 218/255)
+    
+    var body: some View {
+        VStack {
+            Button(action: {
+                saveAction()
+            }) {
+                Text("Save")
+                    .foregroundColor(.white)
+                    .padding(10)
+                    .frame(minWidth: 0, maxWidth: .infinity)
             }
-            TextField("(000) 000-0000", text: $viewModel.secondaryPhone)
-                .padding(10)
-                .background(Color(.white))
-                .cornerRadius(5)
-                .shadow(radius: 5)
-                .keyboardType(.numberPad)
+            .background(viewModel.isButtonEnabled ? activeButtonColor : inactiveButtonColor)
+            .disabled(!viewModel.isButtonEnabled)
+            .cornerRadius(25)
+            .shadow(radius: 5)
             
-            Spacer()
-            
-            VStack {
+            if case .edit(let contact) = viewModel.type {
                 Button(action: {
-                    switch viewModel.type {
-                    case .create:
-                        viewModel.emergencyContactService.save(
-                            contacts: [
-                                EmergencyContact(firstName: viewModel.firstName,
-                                                 lastName: viewModel.lastName,
-                                                 phoneNumber: viewModel.primaryPhone,
-                                                 secondaryPhoneNumber: viewModel.secondaryPhone)]
-                        )
-                    case .edit(let contact):
-                        contact.firstName = viewModel.firstName
-                        contact.lastName = viewModel.lastName
-                        contact.phoneNumber = viewModel.primaryPhone
-                        contact.secondaryPhoneNumber = viewModel.secondaryPhone
-                        viewModel.emergencyContactService.update(contact: contact)
-                    }
-                    presentationMode.wrappedValue.dismiss()
+                    showingDeleteAlert = true
                 }) {
-                    Text("Save")
-                        .foregroundColor(.white)
+                    Text("Delete Contact")
+                        .foregroundColor(.blue)
                         .padding(10)
                         .frame(minWidth: 0, maxWidth: .infinity)
                 }
-                .background(viewModel.isButtonEnabled ? self.activeButtonColor : self.inactiveButtonColor)
-                .disabled(!viewModel.isButtonEnabled)
-                .cornerRadius(25)
+                .background(.clear)
                 .shadow(radius: 5)
-                
-                if case .edit(let contact) = viewModel.type {
-                    Button(action: {
-                        viewModel.emergencyContactService.remove(contact: contact)
-                        presentationMode.wrappedValue.dismiss()
-                    }) {
-                        Text("Delete Contact")
-                            .foregroundColor(.blue)
-                            .padding(10)
-                            .frame(minWidth: 0, maxWidth: .infinity)
-                    }
-                    .background(Color.clear)
-                    .shadow(radius: 5)
+                .alert(isPresented: $showingDeleteAlert) {
+                    Alert(title: Text("Delete Contact?"),
+                          message: Text("Are you sure you want to remove this contact?"),
+                          primaryButton: .destructive(Text("Yes")) {
+                        deleteAction(for: contact)
+                    },
+                          secondaryButton: .cancel(Text("No")))
                 }
             }
-         }
-         .background(Color.clear)
-         .padding(30)
-     }
- }
+        }
+    }
+    
+    private func saveAction() {
+        switch viewModel.type {
+        case .create:
+            viewModel.emergencyContactService.save(
+                contacts: [
+                    EmergencyContact(firstName: viewModel.firstName,
+                                     lastName: viewModel.lastName,
+                                     phoneNumber: viewModel.primaryPhone,
+                                     secondaryPhoneNumber: viewModel.secondaryPhone,
+                                     relationship: viewModel.relationship)]
+            )
+        case .edit(let contact):
+            contact.firstName = viewModel.firstName
+            contact.lastName = viewModel.lastName
+            contact.phoneNumber = viewModel.primaryPhone
+            contact.secondaryPhoneNumber = viewModel.secondaryPhone
+            contact.relationship = viewModel.relationship
+            viewModel.emergencyContactService.update(contact: contact)
+        }
+        dismissView()
+    }
+    
+    private func deleteAction(for contact: EmergencyContact) {
+        viewModel.emergencyContactService.remove(contact: contact)
+        dismissView()
+    }
+    
+    private func dismissView() {
+        Task {
+            presentationMode.dismiss()
+        }
+    }
+}
+
+struct LabeledTextField: View {
+    var label: String
+    var placeholder: String
+    @Binding var text: String
+    var keyboardType: UIKeyboardType = .default
+    
+    var body: some View {
+        VStack {
+            HStack {
+                Text(label)
+                Spacer()
+            }
+            TextField(placeholder, text: $text)
+                .padding(10)
+                .background(.white)
+                .cornerRadius(5)
+                .shadow(radius: 5)
+                .keyboardType(keyboardType)
+        }
+    }
+}
 
 struct EmergencyContactListView_Previews: PreviewProvider {
     static var previews: some View {
